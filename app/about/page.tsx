@@ -6,7 +6,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Heart, Code, Palette, MapPin, Calendar, Mail, Github, Linkedin } from 'lucide-react';
+import { Heart, Code, Palette, MapPin, Calendar, Mail, Github, Linkedin, Sparkles, BookOpen } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -64,8 +64,7 @@ export default function AboutPage() {
                     <span className="font-semibold text-purple-600">의미 있는 경험</span>을 선사하고 싶습니다."
                   </blockquote>
                 </div>
-                
-                {/* 연락처 정보 */}
+                  {/* 연락처 정보 */}
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center gap-3 p-4 bg-white/60 rounded-lg">
                     <Mail className="w-5 h-5 text-blue-500" />
@@ -81,6 +80,22 @@ export default function AboutPage() {
                       <div className="font-medium text-gray-700">2003.07.09</div>
                     </div>
                   </div>
+                </div>
+                
+                {/* 소셜 링크 */}
+                <div className="flex gap-4 justify-center">
+                  <a 
+                    href="https://github.com/jinseo027083" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 rounded-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg group"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 group-hover:text-black transition-colors" />
+                    <div>
+                      <div className="text-sm text-gray-500">GitHub</div>
+                      <div className="font-medium text-gray-700 group-hover:text-black transition-colors">@jinseo027083</div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -109,6 +124,66 @@ export default function AboutPage() {
                 <Heart className="w-12 h-12 text-green-500 mx-auto mb-4" />
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">IT 기획</h4>
                 <p className="text-sm text-gray-600">혁신적인 디지털 서비스 기획 및 전략</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* 보유 역량 */}
+        <Card className="glass-card-enhanced mb-8">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              <Code className="w-6 h-6 mr-3 text-blue-500" />
+              보유 역량
+            </h3>
+            <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+              <p className="text-gray-700 leading-relaxed">
+                <strong>HTML, CSS, JavaScript</strong> UI/UX 요소를 고려한 화면 구성을 기획하고 구현하는 데 관심을 가지고 학습하고 있습니다. 
+                프로그래밍 언어로는 <strong>C언어와 Python</strong>을 활용해 자료구조, 알고리즘 등의 기초 프로그래밍 개념을 익혔으며, 
+                디자인 툴로는 <strong>Figma</strong>를 중심으로 간단한 프로토타입 제작과 와이어프레임 설계 경험이 있습니다. 
+                프로젝트 진행 중에는 <strong>REST API</strong>를 프론트엔드와 연동하여 데이터 처리를 담당했습니다.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* 주요 프로젝트 수행 이력 */}
+        <Card className="glass-card-enhanced mb-8">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              <Sparkles className="w-6 h-6 mr-3 text-green-500" />
+              주요 프로젝트 수행 이력
+            </h3>
+            <div className="space-y-4">
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  🎨 <span className="ml-2">AI 기반 이미지 생성 프로젝트</span>
+                </h4>
+                <p className="text-gray-700">AI 기반 이미지 생성 알고리즘을 활용한 AI 미술 코딩 실습을 진행했습니다.</p>
+              </div>
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  🔮 <span className="ml-2">홀로비전 응용 프로젝트</span>
+                </h4>
+                <p className="text-gray-700">증강현실(AR) 기술을 접목한 사용자 인터페이스를 직접 체험하고 구현했습니다.</p>
+              </div>
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  🌐 <span className="ml-2">Django REST Framework 웹서비스</span>
+                </h4>
+                <p className="text-gray-700">API를 직접 구현하고, 백엔드와 프론트엔드 간의 연동을 경험하면서 웹 서비스의 데이터 흐름과 서버 사이드 로직의 기초를 익혔습니다.</p>
+              </div>
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  📊 <span className="ml-2">데이터 수집 및 분석 프로젝트</span>
+                </h4>
+                <p className="text-gray-700">Data 3.0 수집 실습을 통해 Python을 활용하여 다양한 웹 환경에서 데이터를 수집하고, 히스토그램 명세화 프로젝트로 이미지 데이터 분석 및 시각화를 수행했습니다.</p>
+              </div>
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  🗄️ <span className="ml-2">데이터베이스 설계 프로젝트</span>
+                </h4>
+                <p className="text-gray-700">SQL 기반 데이터베이스 설계 및 기본 구현을 수행했습니다.</p>
               </div>
             </div>
           </CardContent>

@@ -62,21 +62,22 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-          
-          {/* 로고/브랜드명 */}
+        <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">          {/* 로고/브랜드명 */}
           <div className="flex items-center space-x-2">
             <Link 
               href="/" 
               className="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm"
               aria-label="홈페이지로 이동"
             >
-              <div className="h-8 w-8 rounded-md bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg" aria-hidden="true">
-                  B
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm" aria-hidden="true">
+                  진
                 </span>
               </div>
-              <span className="font-bold text-xl">My Blog</span>
+              <div className="flex flex-col">
+                <span className="font-bold text-lg text-gray-800">진서의 Archive</span>
+                <span className="text-xs text-gray-600 hidden sm:block">기술과 감성을 잇다</span>
+              </div>
             </Link>
           </div>
 

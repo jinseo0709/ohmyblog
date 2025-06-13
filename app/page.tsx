@@ -88,14 +88,13 @@ function HeroSection() {
     <section className="hero-gradient py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* 메인 헤더 - 한 줄 완전 배치 */}
-        <div className="text-center mb-16">          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-8 mb-6">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white leading-none tracking-widest">
+        <div className="text-center mb-16">          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-8 mb-6">            <h1 className="text-5xl lg:text-6xl font-black text-white leading-none tracking-wider">
               진서의 Archive
             </h1>
             <div className="flex items-center justify-center lg:justify-start mt-4 lg:mt-0">
               <div className="w-px h-12 bg-white/40 mr-6 hidden lg:block"></div>
               <div className="text-xl lg:text-2xl text-white/90 font-light italic tracking-wide">
-                기술과 사람을 잇다
+                기술과 감성을 잇다
               </div>
             </div>
           </div>
@@ -181,14 +180,25 @@ function IntroductionSection() {
               </div>
               
               {/* 정보 섹션 */}
-              <div className="lg:col-span-3 space-y-8">
-                {/* 비전 */}
-                <div className="relative">
-                  <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-purple-400 to-pink-400 rounded-full"></div>
-                  <blockquote className="text-lg text-gray-700 italic leading-relaxed pl-6">
-                    "기술과 감성의 조화를 통해 사람들에게 <br className="hidden sm:block"/>
-                    <span className="font-semibold text-purple-600">의미 있는 경험</span>을 선사하고 싶습니다."
-                  </blockquote>
+              <div className="lg:col-span-3 space-y-8">                {/* 소개글 */}
+                <div className="bg-gradient-to-r from-white/60 to-white/40 rounded-xl p-6 border border-gray-200/40 shadow-sm">
+                  <div className="flex items-start gap-3">
+                    <div className="w-1 h-16 bg-gradient-to-b from-purple-400 via-pink-400 to-blue-400 rounded-full flex-shrink-0 mt-1"></div>
+                    <div className="space-y-3">
+                      <h3 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
+                        <User className="w-5 h-5 text-purple-500" />
+                        About Me
+                      </h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        저는 현재 <span className="font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded-md">프론트엔드 개발</span>과 
+                        <span className="font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded-md ml-1">UI/UX 분야</span>에 관심을 갖고 
+                        진로를 준비 중인 학생입니다. 
+                      </p>                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-medium text-green-600">사용자 경험</span>에 대한 이해를 바탕으로, 
+                        사람들이 더 쉽게 기술을 사용할 수 있도록 돕는 일을 하고 싶습니다!
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 
                 {/* 관심 분야 - 칩 스타일 개선 */}
@@ -211,9 +221,7 @@ function IntroductionSection() {
                       IT 기획
                     </Badge>
                   </div>
-                </div>
-                
-                {/* 기술 스택 - 현대적 스타일 */}
+                </div>                {/* 기술 스택 - 현대적 스타일 */}
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-4">
                     기술 스택
