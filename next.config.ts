@@ -2,7 +2,6 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
     images: {
-        // 외부 이미지 도메인 허용
         remotePatterns: [
             {
                 protocol: 'https',
@@ -13,17 +12,12 @@ const nextConfig: NextConfig = {
                 hostname: '**',
             },
         ],
-        // 이미지 로딩 실패 시 기본 이미지로 fallback
-        dangerouslyAllowSVG: true,
-        contentDispositionType: 'attachment',
-        contentSecurityPolicy:
-            "default-src 'self'; script-src 'none'; sandbox;",
     },
-    // 개발 환경에서의 로깅 개선
-    logging: {
-        fetches: {
-            fullUrl: true,
-        },
+    env: {
+        NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '',
+        NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || '',
+        CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY || '',
     },
 };
 
