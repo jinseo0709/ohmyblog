@@ -75,7 +75,7 @@ export default function Header() {
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-gray-800">진서의 Archive</span>
+                <span className="font-bold text-lg text-gray-800">진서의 Archive.</span>
                 <span className="text-xs text-gray-600 hidden sm:block">기술과 감성을 잇다</span>
               </div>
             </Link>

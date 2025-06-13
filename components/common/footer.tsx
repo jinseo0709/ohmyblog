@@ -47,7 +47,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-xs">진</span>
               </div>
               <div>
-                <h3 className="font-bold text-sm text-gray-800">진서의 Archive</h3>
+                <h3 className="font-bold text-sm text-gray-800">진서의 Archive.</h3>
                 <p className="text-xs text-gray-600">기술과 감성을 잇다</p>
               </div>
             </div>

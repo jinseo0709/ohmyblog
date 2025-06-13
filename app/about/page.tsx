@@ -153,8 +153,24 @@ export default function AboutPage() {
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
               <Sparkles className="w-6 h-6 mr-3 text-green-500" />
               주요 프로젝트 수행 이력
-            </h3>
-            <div className="space-y-4">
+            </h3>            <div className="space-y-4">
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  💻 <span className="ml-2">Next.js 기반 개인 블로그 제작</span>
+                </h4>
+                <p className="text-gray-700">React와 Next.js를 활용하여 개인 블로그를 설계, Supabase를 활용한 데이터베이스 연동 </p>
+              </div>              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  🤖 <span className="ml-2">산학협력프로젝트 "AI 기반 쉬운글 변환기 제작" (진행중)</span>
+                </h4>
+                <p className="text-gray-700"> 기업과 협력하여 AI 시스템 개발 프로젝트에 참여하고 있습니다.</p>
+              </div>
+              <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
+                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                  📍 <span className="ml-2">ONEM2M Mobius를 활용한 위치기반 광고 서비스 기획</span>
+                </h4>
+                <p className="text-gray-700">IoT 표준 플랫폼인 ONEM2M Mobius를 활용하여 사용자의 위치 정보를 기반으로 한 맞춤형 광고 서비스를 기획하고 설계했습니다.</p>
+              </div>
               <div className="bg-white/40 rounded-lg p-6 border border-gray-200/50">
                 <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                   🎨 <span className="ml-2">AI 기반 이미지 생성 프로젝트</span>

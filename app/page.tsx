@@ -89,7 +89,7 @@ function HeroSection() {
       <div className="max-w-7xl mx-auto">
         {/* 메인 헤더 - 한 줄 완전 배치 */}
         <div className="text-center mb-16">          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-8 mb-6">            <h1 className="text-5xl lg:text-6xl font-black text-white leading-none tracking-wider">
-              진서의 Archive
+              진서의 Archive.
             </h1>
             <div className="flex items-center justify-center lg:justify-start mt-4 lg:mt-0">
               <div className="w-px h-12 bg-white/40 mr-6 hidden lg:block"></div>
