@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans_KR } from "next/font/google";
+import { Montserrat, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { Providers } from "./providers";
 
-// 폰트 설정 - Inter와 Noto Sans KR 조합
-const inter = Inter({
+// 폰트 설정 - Montserrat와 Noto Sans KR 조합 (더욱 세련된 느낌)
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-montserrat",
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const notoSansKR = Noto_Sans_KR({
   subsets: ["latin"],
   variable: "--font-noto-sans-kr",
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -110,7 +111,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${inter.variable} ${notoSansKR.variable}`}>
+    <html lang="ko" className={`${montserrat.variable} ${notoSansKR.variable}`}>
       <head>
         {/* 구조화된 데이터 - 웹사이트 정보 */}
         <script
