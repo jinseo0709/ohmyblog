@@ -16,21 +16,11 @@ export default function DiagnosticTest() {
         <h2>Tailwind Class Test</h2>
         <p>This should have blue background and white text (Tailwind classes)</p>
       </div>
-      
-      {/* CSS 모듈 또는 글로벌 CSS 테스트 */}
-      <div className="test-green">
-        <h2>Global CSS Test</h2>
-        <p>This should have green background (if global CSS is working)</p>
+        {/* CSS 모듈 또는 글로벌 CSS 테스트 */}
+      <div className="bg-green-500 text-white p-5 m-3">
+        <h2>Tailwind Green Test</h2>
+        <p>This should have green background (Tailwind classes)</p>
       </div>
-      
-      <style jsx>{`
-        .test-green {
-          background-color: green;
-          color: white;
-          padding: 20px;
-          margin: 10px;
-        }
-      `}</style>
     </div>
   );
 }
