@@ -123,7 +123,7 @@ export default function AboutPage() {
               <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl">
                 <Heart className="w-12 h-12 text-green-500 mx-auto mb-4" />
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">IT 기획</h4>
-                <p className="text-sm text-gray-600">혁신적인 디지털 서비스 기획 및 전략</p>
+                <p className="text-sm text-gray-600">혁신적인 IT 서비스 기획 및 전략</p>
               </div>
             </div>
           </CardContent>
