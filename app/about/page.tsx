@@ -3,10 +3,22 @@
  * 진서의 상세한 프로필과 이력을 소개하는 페이지
  */
 
+import type { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Heart, Code, Palette, MapPin, Calendar, Mail, Github, Linkedin, Sparkles, BookOpen } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: "소개",
+  description: "프론트엔드 개발과 UI/UX 분야에 관심을 갖고 있는 진서의 상세한 프로필, 보유 역량, 프로젝트 수행 이력을 소개합니다.",
+  keywords: ["진서", "프론트엔드", "UI/UX", "포트폴리오", "프로젝트", "Next.js", "React"],
+  openGraph: {
+    title: "진서 소개 - 진서의 Archive",
+    description: "프론트엔드 개발과 UI/UX 분야에 관심을 갖고 있는 진서의 상세한 프로필과 프로젝트 이력을 확인해보세요.",
+    url: "/about",
+  },
+};
 
 export default function AboutPage() {
   return (

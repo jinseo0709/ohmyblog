@@ -23,46 +23,44 @@ const notoSansKR = Noto_Sans_KR({
 // SEO 메타데이터 설정
 export const metadata: Metadata = {
   title: {
-    default: "My Blog - 웹 개발 기술 블로그",
-    template: "%s | My Blog",
+    default: "진서의 Archive - 기술과 감성을 잇다",
+    template: "%s | 진서의 Archive",
   },
-  description: "웹 개발, JavaScript, React, Next.js에 관한 기술 블로그입니다. 최신 개발 트렌드와 실무 경험을 공유합니다.",
-  keywords: ["웹 개발", "JavaScript", "React", "Next.js", "TypeScript", "프론트엔드", "기술 블로그"],
-  authors: [{ name: "My Blog Team" }],
-  creator: "My Blog",
-  publisher: "My Blog",
+  description: "프론트엔드 개발과 UI/UX 분야에 관심을 갖고 진로를 준비 중인 학생의 기술 블로그입니다. 사용자 경험 중심의 개발 이야기를 공유합니다.",
+  keywords: ["프론트엔드", "UI/UX", "React", "Next.js", "웹 개발", "진서", "기술 블로그", "학생 개발자"],
+  authors: [{ name: "진서", url: "https://github.com/jinseo0709" }],
+  creator: "진서",
+  publisher: "진서의 Archive",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  
-  // Open Graph 설정
+    // Open Graph 설정
   openGraph: {
     type: "website",
     locale: "ko_KR",
     url: "/",
-    title: "My Blog - 웹 개발 기술 블로그",
-    description: "웹 개발, JavaScript, React, Next.js에 관한 기술 블로그입니다.",
-    siteName: "My Blog",
+    title: "진서의 Archive - 기술과 감성을 잇다",
+    description: "프론트엔드 개발과 UI/UX 분야에 관심을 갖고 진로를 준비 중인 학생의 기술 블로그입니다.",
+    siteName: "진서의 Archive",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/default-avatar.png",
         width: 1200,
         height: 630,
-        alt: "My Blog",
+        alt: "진서의 Archive - 기술과 감성을 잇다",
       },
     ],
   },
-  
-  // Twitter Card 설정
+    // Twitter Card 설정
   twitter: {
     card: "summary_large_image",
-    title: "My Blog - 웹 개발 기술 블로그",
-    description: "웹 개발, JavaScript, React, Next.js에 관한 기술 블로그입니다.",
-    images: ["/images/og-image.jpg"],
-    creator: "@myblog",
+    title: "진서의 Archive - 기술과 감성을 잇다",
+    description: "프론트엔드 개발과 UI/UX 분야에 관심을 갖고 진로를 준비 중인 학생의 기술 블로그입니다.",
+    images: ["/default-avatar.png"],
+    creator: "@jinseo0709",
   },
   
   // 기타 메타데이터
